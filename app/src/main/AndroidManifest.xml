@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.artur.climatecontrolterminal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <uses-permission android:name="android.permission.MANAGE_USB"
+            tools:ignore="ProtectedPermissions" />
+        <activity android:name=".StartActivity">
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+               <!-- <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            </intent-filter>
+
+            <!--<meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />-->
+        </activity>
+
+
+        <uses-feature android:name="android.hardware.usb.host" />
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Serial converters -->
+    <usb-device vendor-id="5824" product-id="1488" />
+    <!-- … more devices … -->
+</resources>

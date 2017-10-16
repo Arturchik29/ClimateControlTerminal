@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.artur.climatecontrolterminal.MainActivity">
+    <!--android:background="#222222"-->
+
+    <TextView
+        android:id="@+id/epta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/device_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--        android:textColor="#FFFFFF" -->
+    <ImageView
+        android:id="@+id/btnReadLCD"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:onClick="btnClick"
+        android:contentDescription="@string/lcd_view" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="8"
+        android:stretchColumns="0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_rowSpan="2">
+            <Button
+                android:id="@+id/btnPassTempPlus"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:onClick="btnClick"
+                android:text="@string/tempPlus"
+                android:textSize="30sp" />
+
+            <ToggleButton
+                android:id="@+id/btnDual"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:onClick="btnClick"
+                android:text="@string/dual"
+                android:textOff="@string/dual"
+                android:textOn="@string/dual"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnPassTempMinus"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:onClick="btnClick"
+                android:text="@string/tempMinus"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/btnFront"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:onClick="btnClick"
+            android:text="@string/front"
+            android:textOff="@string/front"
+            android:textOn="@string/front"
+            android:textSize="30sp" />
+
+        <ToggleButton
+            android:id="@+id/btnRear"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:onClick="btnClick"
+            android:text="@string/rear"
+            android:textOff="@string/rear"
+            android:textOn="@string/rear"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnRecirc"
+            android:layout_width="360dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/recirc_fresh"
+            android:textSize="30sp" />
+
+        <ToggleButton
+            android:id="@+id/btnAuto"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/auto"
+            android:textOff="@string/auto"
+            android:textOn="@string/auto"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnTempPlus"
+            android:layout_width="180dp"
+            android:layout_column="6"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:onClick="btnClick"
+            android:text="@string/tempPlus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnTempMinus"
+            android:layout_width="180dp"
+            android:layout_column="6"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:onClick="btnClick"
+            android:text="@string/tempMinus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnMode"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:onClick="btnClick"
+            android:text="@string/mode"
+            android:textSize="30sp" />
+
+        <ToggleButton
+            android:id="@+id/btnAC"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/ac"
+            android:textOff="@string/ac"
+            android:textOn="@string/ac"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnFanMinus"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/fanMinus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnFanPlus"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/fanPlus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnOff"
+            android:layout_width="180dp"
+            android:layout_gravity="fill"
+            android:onClick="btnClick"
+            android:text="@string/off"
+            android:textSize="30sp" />
+
+    </GridLayout>
+
+</LinearLayout>
